@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: javajava-java-sample-mj2r
+  namespace: e2e-demos-oqoy-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:86eec62873f13d67c51eff4c8777e66658e9a8605c5c7051a8622875781e1448
+        name: my-java-springboot
+        resources: {}
+status: {}
